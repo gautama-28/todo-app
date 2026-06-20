@@ -1,4 +1,4 @@
-# Todo App — Spring Boot REST API
+# Todo App : Spring Boot REST API
 
 A simple, clean REST API for managing a to-do list, built with Spring Boot. I made this project mainly to get comfortable with the core building blocks of Spring — controllers, services, repositories, DTOs, and dependency injection — by actually building something end to end instead of just reading theory.
 
