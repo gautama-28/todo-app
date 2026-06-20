@@ -65,7 +65,15 @@ public class TodoController {
     public void deleteById(@PathVariable Integer id){
         todoService.deleteTodo(id);
     }
+     @PatchMapping("/{id}/complete")
+    public TodoResponse markComplete(@PathVariable Integer id){
+        Todo todo = todoService.findById(id);
 
+        if(todo == null) throw new RuntimeException("Does not exist");
 
+        todo.setCompleted(true);
+
+        return todoMapper.todoResponse(todo);
+     }
 
 }
